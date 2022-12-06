@@ -8,10 +8,10 @@ ECHO.
 ECHO CREATE TABLE IF NOT EXISTS logger(User varchar(10), Date text default current_timestamp); | sqlite3 logger.db
 ECHO INSERT INTO logger VALUES('%USERNAME%', DATETIME('now', 'localtime')); | sqlite3 logger.db
 
-ECHO –ò–º—è –ø—Ä–æ–≥—Ä–∞–º–º—ã: %~nx0
-ECHO|<nul SET /p="–ö–æ–ª–∏—á–µ—Å—Ç–≤–æ –∑–∞–ø—É—Å–∫–æ–≤: "
+ECHO à¨Ô Ø‡Æ£‡†¨¨Î: %~nx0
+ECHO|<nul SET /p="äÆ´®Á•·‚¢Æ ß†Ø„·™Æ¢: "
 ECHO SELECT COUNT(*) FROM logger; | sqlite3 logger.db
-ECHO|<nul SET /p="–ü–µ—Ä–≤—ã–π –∑–∞–ø—É—Å–∫: "
+ECHO|<nul SET /p="è•‡¢Î© ß†Ø„·™: "
 ECHO SELECT Date FROM logger ORDER BY Date ASC LIMIT 1; | sqlite3 logger.db
 
 ECHO.
